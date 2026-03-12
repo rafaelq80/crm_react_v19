@@ -1,0 +1,53 @@
+{
+  "name": "crm_react_v19",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "@tailwindcss/vite": "^4.2.1",
+    "@tanstack/react-table": "^8.21.3",
+    "axios": "^1.13.6",
+    "date-fns": "^4.1.0",
+    "eslint-plugin-react": "^7.37.5",
+    "prettier": "^3.8.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-number-format": "^5.4.4",
+    "react-router-dom": "^7.13.1",
+    "react-spinners": "^0.17.0",
+    "react-toastify": "^11.0.5",
+    "reactjs-popup": "^2.0.6",
+    "recharts": "^3.8.0",
+    "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.4.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.4",
+    "eslint": "^10.0.3",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.57.0",
+    "vite": "^7.3.1"
+  },
+  "overrides": {
+    "minimatch": "^10.2.4",
+    "eslint-plugin-react": {
+      "eslint": "^10.0.2"
+    },
+    "eslint-plugin-react-hooks": {
+      "eslint": "^10.0.2"
+    }
+  }
+}
