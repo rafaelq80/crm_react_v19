@@ -82,7 +82,7 @@ function Cadastro() {
 			{/* Imagem de Fundo - Desktop */}
 			<div
 				style={{
-					backgroundImage: `url("https://ik.imagekit.io/vzr6ryejm/crm/bg_08.jpg")`,
+					backgroundImage: `url("https://ik.imagekit.io/vzr6ryejm/crm/bg_10.png")`,
 				}}
 				className="lg:block hidden bg-no-repeat w-full h-screen bg-cover bg-center relative
 					before:content-[''] before:absolute before:inset-0 before:bg-linear-to-br 

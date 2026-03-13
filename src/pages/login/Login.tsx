@@ -164,7 +164,7 @@ function Login() {
 			{/* Imagem de Fundo - Desktop */}
 			<div
 				style={{
-					backgroundImage: `url("https://ik.imagekit.io/vzr6ryejm/crm/bg_07.png")`,
+					backgroundImage: `url("https://ik.imagekit.io/vzr6ryejm/crm/bg_09.png")`,
 				}}
 				className="lg:block hidden bg-no-repeat w-full h-full bg-cover bg-center relative
 					before:content-[''] before:absolute before:inset-0 before:bg-linear-to-br 
