@@ -25,7 +25,7 @@ function Navbar() {
 
   if (usuario.token !== "") {
     component = (
-      <nav className="sticky top-0 z-50 bg-gradient-to-r from-zinc-900 via-zinc-800 to-zinc-900 shadow-xl border-b border-zinc-700">
+      <nav className="sticky top-0 z-50 bg-linear-to-r from-zinc-900 via-zinc-800 to-zinc-900 shadow-xl border-b border-zinc-700">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}

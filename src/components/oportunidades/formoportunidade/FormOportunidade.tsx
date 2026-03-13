@@ -232,7 +232,7 @@ function FormOportunidade() {
 					className="bg-white rounded-2xl shadow-lg p-8 border border-gray-200"
 					onSubmit={gerarNovaOportunidade}
 				>
-					{/* Nome */}
+					{/* Descrição */}
 					<div className="flex flex-col gap-2 mb-5">
 						<label htmlFor="descricao" className="text-sm font-semibold text-gray-700">
 							Oportunidade
@@ -373,7 +373,7 @@ function FormOportunidade() {
 						<button
 							type="submit"
 							disabled={!clienteSelecionado}
-							className="flex justify-center items-center rounded disabled:bg-gray-300 bg-gradient-to-r 
+							className="flex justify-center items-center rounded disabled:bg-gray-300 bg-linear-to-r 
 								from-zinc-600 to-zinc-700 hover:from-zinc-700 hover:to-zinc-800 text-white font-bold 
 								w-1/2 mx-auto py-2.5 transition-all duration-200 active:scale-95"
 						>

@@ -78,17 +78,17 @@ function Cadastro() {
 	}
 
 	return (
-		<div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
+		<div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold bg-linear-to-br from-gray-50 to-gray-100 overflow-hidden">
 			{/* Imagem de Fundo - Desktop */}
 			<div
 				style={{
-					backgroundImage: `url("https://ik.imagekit.io/vzr6ryejm/crm/bg_06.jpg?updatedAt=1729453854682")`,
+					backgroundImage: `url("https://ik.imagekit.io/vzr6ryejm/crm/bg_08.jpg")`,
 				}}
 				className="lg:block hidden bg-no-repeat w-full h-screen bg-cover bg-center relative
-					before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br 
+					before:content-[''] before:absolute before:inset-0 before:bg-linear-to-br 
 					before:from-zinc-600/20 before:to-transparent"
 			>
-				<div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+				<div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent"></div>
 			</div>
 
 			{/* Formulário */}
@@ -99,7 +99,7 @@ function Cadastro() {
 				>
 					{/* Cabeçalho */}
 					<div className="text-center mb-2">
-						<h2 className="text-4xl mb-2 bg-gradient-to-r from-zinc-600 to-zinc-700 bg-clip-text text-transparent">
+						<h2 className="text-4xl mb-2 bg-linear-to-r from-zinc-600 to-zinc-700 bg-clip-text text-transparent">
 							Cadastrar
 						</h2>
 						<p className="text-gray-500 text-sm font-normal">
@@ -256,7 +256,7 @@ function Cadastro() {
 						<button
 							type="submit"
 							disabled={isLoading}
-							className="rounded-lg bg-gradient-to-r from-zinc-600 to-zinc-700 flex justify-center items-center
+							className="rounded-lg bg-linear-to-r from-zinc-600 to-zinc-700 flex justify-center items-center
 								hover:from-zinc-700 hover:to-zinc-800 active:scale-95
 								disabled:from-gray-300 disabled:to-gray-400 disabled:cursor-not-allowed
 								py-2.5 w-1/2 text-white font-semibold text-sm

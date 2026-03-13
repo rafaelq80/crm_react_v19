@@ -63,7 +63,7 @@ export function validarCampoOportunidade(name: string, value: string): string {
 export function validarFormularioOportunidade(oportunidade: Oportunidade): Record<string, string> {
 	const erros: Record<string, string> = {}
 
-	erros.nome = validarCampoOportunidade("nome", oportunidade.descricao || "")
+	erros.descricao = validarCampoOportunidade("nome", oportunidade.descricao || "")
 	erros.valor = validarCampoOportunidade("valor", oportunidade.valor?.toString() || "")
 	erros.dataFechamento = validarCampoOportunidade(
 		"dataFechamento",

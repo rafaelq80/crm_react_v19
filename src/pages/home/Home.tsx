@@ -19,7 +19,7 @@ function Home() {
   }, [token]);
 
   return (
-    <div className="min-h-[80vh] bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 flex justify-center items-center overflow-hidden relative">
+    <div className="min-h-[80vh] bg-linear-to-br from-gray-50 via-gray-100 to-gray-200 flex justify-center items-center overflow-hidden relative">
       {/* Elementos decorativos de fundo */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-zinc-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-zinc-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse delay-1000"></div>
@@ -32,7 +32,7 @@ function Home() {
               Seja Bem-vinde!
             </h2>
             
-            <div className="h-1 w-24 bg-gradient-to-r from-zinc-600 to-zinc-400 rounded-full animate-slide-in-left delay-200"></div>
+            <div className="h-1 w-24 bg-linear-to-r from-zinc-600 to-zinc-400 rounded-full animate-slide-in-left delay-200"></div>
             
             <p className="text-zinc-700 text-xl lg:text-2xl leading-relaxed animate-slide-in-left delay-300">
               Conecte, Simplifique, Cresça!
@@ -71,7 +71,7 @@ function Home() {
         <div className="flex justify-center items-center lg:justify-end animate-fade-in-right">
           <div className="relative">
             {/* Efeito de brilho atrás da imagem */}
-            <div className="absolute inset-0 bg-gradient-to-r from-zinc-400 to-zinc-600 rounded-3xl blur-2xl opacity-20 animate-pulse"></div>
+            <div className="absolute inset-0 bg-linear-to-r from-zinc-400 to-zinc-600 rounded-3xl blur-2xl opacity-20 animate-pulse"></div>
             
             <img
               src="https://ik.imagekit.io/vzr6ryejm/crm/home_02.png?updatedAt=1729405554760"

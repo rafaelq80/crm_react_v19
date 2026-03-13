@@ -86,11 +86,11 @@ function DeletarCliente() {
         </p>
 
         {/* Card do Cliente */}
-        <div className="bg-gradient-to-r from-zinc-600 to-zinc-700 rounded-lg p-6 mb-8">
+        <div className="bg-linear-to-r from-zinc-600 to-zinc-700 rounded-lg p-6 mb-8">
           <p className="text-white text-sm font-semibold mb-2">
             Cliente a ser removido:
           </p>
-          <p className="text-white text-2xl font-bold break-words">
+          <p className="text-white text-2xl font-bold wrap-break-word">
             {cliente.nome || 'Carregando...'}
           </p>
         </div>

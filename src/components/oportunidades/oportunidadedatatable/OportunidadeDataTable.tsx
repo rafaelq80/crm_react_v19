@@ -121,7 +121,7 @@ function OportunidadeDataTable({ oportunidades }: OportunidadeDataTableProps) {
         </div>
         <button
           onClick={() => navigate('/cadastraroportunidade')}
-          className="flex items-center justify-center gap-2 bg-gradient-to-r from-zinc-600 to-zinc-700 
+          className="flex items-center justify-center gap-2 bg-linear-to-r from-zinc-600 to-zinc-700 
             hover:from-zinc-700 hover:to-zinc-800 px-6 py-2.5 text-white font-bold rounded-xl
             shadow-lg hover:shadow-xl transition-all duration-300 active:scale-95 whitespace-nowrap"
         >
@@ -134,7 +134,7 @@ function OportunidadeDataTable({ oportunidades }: OportunidadeDataTableProps) {
       {/* Tabela Desktop */}
       <div className="hidden lg:block bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
         {/* Header */}
-        <div className="grid grid-cols-12 bg-gradient-to-r from-gray-50 to-gray-100 border-b border-gray-200">
+        <div className="grid grid-cols-12 bg-linear-to-r from-gray-50 to-gray-100 border-b border-gray-200">
           {table.getFlatHeaders().map((header, index) => {
             const colSpan = 
               index === 5 ? 'col-span-2' : 

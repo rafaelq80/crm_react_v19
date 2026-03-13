@@ -52,7 +52,7 @@ function ListaOportunidades() {
   // Estado de Loading
   if (isLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100">
+      <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-gray-50 to-gray-100">
         <div className="text-center space-y-4">
           <SyncLoader color="#18181b" size={16} />
           <p className="text-gray-600 font-medium">Carregando oportunidades...</p>
@@ -64,10 +64,10 @@ function ListaOportunidades() {
   // Estado Vazio
   if (oportunidades.length === 0) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 p-4">
+      <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-gray-50 to-gray-100 p-4">
         <div className="bg-white rounded-3xl shadow-2xl border border-gray-200 p-12 max-w-md w-full text-center space-y-6">
           <div className="flex justify-center">
-            <div className="w-24 h-24 bg-gradient-to-br from-zinc-100 to-zinc-200 rounded-full flex items-center justify-center">
+            <div className="w-24 h-24 bg-linear-to-br from-zinc-100 to-zinc-200 rounded-full flex items-center justify-center">
               <BriefcaseIcon size={48} className="text-zinc-600" />
             </div>
           </div>
@@ -83,7 +83,7 @@ function ListaOportunidades() {
 
           <button
             onClick={() => navigate('/cadastraroportunidade')}
-            className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-zinc-600 to-zinc-700 
+            className="flex items-center justify-center gap-2 w-full bg-linear-to-r from-zinc-600 to-zinc-700 
               hover:from-zinc-700 hover:to-zinc-800 px-6 py-3 text-white font-bold rounded-xl
               shadow-lg hover:shadow-xl transition-all duration-300 active:scale-95"
           >
@@ -97,7 +97,7 @@ function ListaOportunidades() {
 
   // Lista de Oportunidades
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-4 sm:p-6 lg:p-8">
+    <div className="min-h-screen bg-linear-to-br from-gray-50 to-gray-100 p-4 sm:p-6 lg:p-8">
       <div className="max-w-8xl mx-auto space-y-6">
         {/* Header com Estatísticas */}
         <div className="py-2">

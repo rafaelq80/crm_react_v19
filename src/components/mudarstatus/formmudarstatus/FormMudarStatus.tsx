@@ -82,7 +82,7 @@ function FormMudarStatus ({
         </button>
         <button
           type="submit"
-          className="flex-1 px-4 py-2.5 bg-gradient-to-r from-zinc-600 to-zinc-700 
+          className="flex-1 px-4 py-2.5 bg-linear-to-r from-zinc-600 to-zinc-700 
             hover:from-zinc-700 hover:to-zinc-800 text-white font-semibold rounded-lg 
             transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed
             active:scale-95"

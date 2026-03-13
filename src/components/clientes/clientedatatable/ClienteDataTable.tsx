@@ -77,7 +77,7 @@ function ClienteDataTable({ clientes }: ClienteDataTableProps) {
         </div>
         <button
           onClick={() => navigate('/cadastrarcliente')}
-          className="flex items-center justify-center gap-2 bg-gradient-to-r from-zinc-600 to-zinc-700 
+          className="flex items-center justify-center gap-2 bg-linear-to-r from-zinc-600 to-zinc-700 
             hover:from-zinc-700 hover:to-zinc-800 px-6 py-2.5 text-white font-bold rounded-xl
             shadow-lg hover:shadow-xl transition-all duration-300 active:scale-95"
         >
@@ -90,7 +90,7 @@ function ClienteDataTable({ clientes }: ClienteDataTableProps) {
       {/* Tabela Desktop */}
       <div className="hidden lg:block bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
         {/* Header */}
-        <div className="grid grid-cols-12 bg-gradient-to-r from-gray-50 to-gray-100 border-b border-gray-200">
+        <div className="grid grid-cols-12 bg-linear-to-r from-gray-50 to-gray-100 border-b border-gray-200">
           {table.getFlatHeaders().map((header, index) => {
             const colSpan = index === 0 || index === 4 ? 'col-span-1' : index === 1 || index === 2 ? 'col-span-3' : 'col-span-4'
             return (
@@ -143,7 +143,7 @@ function ClienteDataTable({ clientes }: ClienteDataTableProps) {
             >
               {/* Header do Card - Foto e Nome */}
               <div className="flex items-center gap-4">
-                <div className="w-16 h-16 flex-shrink-0">
+                <div className="w-16 h-16 shrink-0">
                   <img
                     src={cliente.foto || "https://ik.imagekit.io/vzr6ryejm/profile/usuario.svg?updatedAt=1729485119852"}
                     alt={cliente.nome}
@@ -167,17 +167,17 @@ function ClienteDataTable({ clientes }: ClienteDataTableProps) {
               {/* Contato */}
               <div className="bg-gray-50 rounded-lg p-3 space-y-2">
                 <div className="flex items-center gap-2 text-sm">
-                  <EnvelopeIcon size={16} className="text-gray-400 flex-shrink-0" />
+                  <EnvelopeIcon size={16} className="text-gray-400 shrink-0" />
                   <span className="font-semibold text-gray-500">Email:</span>
                   <span className="text-gray-700 truncate">{cliente.email || '-'}</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm">
-                  <PhoneIcon size={16} className="text-gray-400 flex-shrink-0" />
+                  <PhoneIcon size={16} className="text-gray-400 shrink-0" />
                   <span className="font-semibold text-gray-500">Telefone:</span>
                   <span className="text-gray-700">{cliente.telefone || '-'}</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm">
-                  <IdentificationCardIcon size={16} className="text-gray-400 flex-shrink-0" />
+                  <IdentificationCardIcon size={16} className="text-gray-400 shrink-0" />
                   <span className="font-semibold text-gray-500">CNPJ:</span>
                   <span className="text-gray-700">{cliente.cnpj || '-'}</span>
                 </div>

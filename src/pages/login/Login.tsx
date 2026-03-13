@@ -40,7 +40,7 @@ function Login() {
 	}
 
 	return (
-		<div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold bg-gradient-to-br from-gray-50 to-gray-100">
+		<div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold bg-linear-to-br from-gray-50 to-gray-100">
 			{/* Formulário */}
 			<div className="flex justify-center items-center w-full h-full px-8 lg:px-0">
 				<form
@@ -49,7 +49,7 @@ function Login() {
 				>
 					{/* Cabeçalho */}
 					<div className="text-center mb-4">
-						<h2 className="text-5xl mb-2 bg-gradient-to-r from-zinc-600 to-zinc-800 bg-clip-text text-transparent">
+						<h2 className="text-5xl mb-2 bg-linear-to-r from-zinc-600 to-zinc-800 bg-clip-text text-transparent">
 							Entrar
 						</h2>
 						<p className="text-gray-500 text-sm font-normal">
@@ -120,7 +120,7 @@ function Login() {
 					<button
 						type="submit"
 						disabled={isLoading}
-						className="rounded-xl bg-gradient-to-r from-zinc-600 to-zinc-700 flex justify-center items-center
+						className="rounded-xl bg-linear-to-r from-zinc-600 to-zinc-700 flex justify-center items-center
 							hover:from-zinc-700 hover:to-zinc-900 active:scale-95
 							disabled:from-gray-300 disabled:to-gray-400 disabled:cursor-not-allowed
 							text-white w-full py-3.5 font-bold text-base
@@ -164,14 +164,14 @@ function Login() {
 			{/* Imagem de Fundo - Desktop */}
 			<div
 				style={{
-					backgroundImage: `url("https://ik.imagekit.io/vzr6ryejm/crm/bg_05.jpg?updatedAt=1729453208523")`,
+					backgroundImage: `url("https://ik.imagekit.io/vzr6ryejm/crm/bg_07.png")`,
 				}}
 				className="lg:block hidden bg-no-repeat w-full h-full bg-cover bg-center relative
-					before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br 
+					before:content-[''] before:absolute before:inset-0 before:bg-linear-to-br 
 					before:from-cyan-600/20 before:to-transparent"
 			>
 				{/* Overlay decorativo */}
-				<div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+				<div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent"></div>
 			</div>
 		</div>
 	)

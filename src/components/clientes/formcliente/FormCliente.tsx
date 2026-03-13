@@ -305,7 +305,7 @@ function FormCliente() {
 						<button
 							type="submit"
 							disabled={isLoading}
-							className="flex justify-center items-center rounded disabled:bg-gray-300 bg-gradient-to-r 
+							className="flex justify-center items-center rounded disabled:bg-gray-300 bg-linear-to-r 
 								from-zinc-600 to-zinc-700 hover:from-zinc-700 hover:to-zinc-800 text-white font-bold 
 								w-1/2 mx-auto py-2.5 transition-all duration-200 active:scale-95"
 						>

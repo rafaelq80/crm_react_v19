@@ -19,7 +19,7 @@ function Perfil() {
   }, [usuario.token]);
 
   return (
-    <div className="flex justify-center min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-8">
+    <div className="flex justify-center min-h-screen bg-linear-to-br from-gray-50 to-gray-100 py-8">
       <div className="w-full max-w-8xl mx-4">
         <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
           {/* Imagem de Capa */}
@@ -29,7 +29,7 @@ function Perfil() {
               src="https://ik.imagekit.io/vzr6ryejm/crm/bg_01.jpeg?updatedAt=1729453854851"
               alt="Capa do Perfil"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent"></div>
           </div>
 
           {/* Foto de Perfil */}
