@@ -18,7 +18,11 @@ interface DashboardProps {
   oportunidades: Oportunidade[]
 }
 
-const CORES_PIZZA = ['#f59e0b', '#10b981', '#ef4444', '#0891b2' ]
+const CORES_PIZZA: Record<string, string> = {
+  Aberta: '#f59e0b',
+  Fechada: '#10b981',
+  Perdida: '#ef4444',
+}
 const CORES_BARRAS = ['#0891b2', '#06b6d4', '#14b8a6', '#10b981', '#84cc16', '#eab308', '#f59e0b', '#ef4444']
 
 function Dashboard({ oportunidades }: DashboardProps) {
@@ -53,8 +57,8 @@ function Dashboard({ oportunidades }: DashboardProps) {
                   labelLine={false}
                   label={({ name, percent }: any) => `${name} ${((percent ?? 0) * 100).toFixed(0)}%`}
                 >
-                  {oportunidadesPorStatus.map((_item, index) => (
-                    <Cell key={`cell-${index}`} fill={CORES_PIZZA[index % CORES_PIZZA.length]} />
+                  {oportunidadesPorStatus.map((item, index) => (
+                    <Cell key={`cell-${index}`} fill={CORES_PIZZA[item.name] ?? '#0891b2'} />
                   ))}
                 </Pie>
                 <Tooltip formatter={(value) => `${value} oportunidade(s)`} />

@@ -20,7 +20,7 @@ function Perfil() {
 
   return (
     <div className="flex justify-center min-h-screen bg-linear-to-br from-gray-50 to-gray-100 py-8">
-      <div className="w-full max-w-8xl mx-4">
+      <div className="w-full max-w-7xl mx-4">
         <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
           {/* Imagem de Capa */}
           <div className="relative h-80 overflow-hidden">
